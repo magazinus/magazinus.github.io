@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Kako Magazin obrađuje lokalnu evidenciju, Google prijavu i opcione Drive kopije, i kako možeš da upravljaš svojim podacima.">
+  <title>Politika privatnosti — Magazin</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip-link" href="#sadrzaj">Pređi na sadržaj</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Magazin</a>
+      <nav aria-label="Glavna navigacija">
+        <a href="index.html">O aplikaciji</a>
+        <a href="privacy.html" aria-current="page">Privatnost</a>
+        <a href="terms.html">Uslovi</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="sadrzaj" tabindex="-1">
+    <h1>Politika privatnosti</h1>
+    <p class="updated">Tekst ažuriran <time datetime="2026-10-16">16. oktobra 2026.</time></p>
+    <p class="lead">Magazin je lična Android aplikacija. Evidencija se čuva na uređaju, a Google Drive kopije su opcione i uključuješ ih svojim izborom.</p>
+
+    <h2>O aplikaciji i održavaocu</h2>
+    <p>Magazin služi za evidenciju honorarnih sati, uplata i obračuna. Osnovni rad ne zahteva Google nalog. Aplikacija nema sopstveni server za prikupljanje evidencije. Javni profil održavaoca je <a href="https://github.com/magazinus">magazinus na GitHub-u</a>.</p>
+
+    <h2>Podaci koji se obrađuju</h2>
+    <p>Na uređaju se obrađuju:</p>
+    <ul>
+      <li>datumi, sati, uplate i opcione beleške koje uneseš;</li>
+      <li>istorijske satnice unosa, podrazumevana satnica i početni dug;</li>
+      <li>podaci potrebni za lokalne kopije, izabranu fasciklu i status kopiranja.</li>
+    </ul>
+    <p>Ako povežeš Google nalog, Google SDK upravlja prijavom i dozvolom. Magazin koristi Google identifikator i email za povezivanje kopija sa odgovarajućim nalogom i prikaz povezanog naloga. Lokalno se čuvaju to vezivanje, izbor automatskog kopiranja, oznake i vremena kopija i statusi greške ili čekanja.</p>
+    <p>Aplikacioni kod ne upisuje Google pristupne tokene u svoju evidenciju, JSON kopije ili logove. Privremeni pristupni token koristi se za odobrene Google API zahteve; prijavom upravlja Google SDK.</p>
+
+    <h2>Kada se podaci šalju Google-u</h2>
+    <p>Sama prijava ne pokreće slanje ili vraćanje evidencije. Tek izričito uključivanje Drive kopija omogućava automatsko slanje. Vraćanje izabrane kopije takođe traži tvoju potvrdu.</p>
+    <p>Drive kopija sadrži kompletnu evidenciju, beleške, istorijske satnice, podrazumevanu satnicu, početni dug i podatke o formatu i izvozu. Kreira se kao JSON u fascikli <strong>Magazin — kopije</strong> na izabranom Google Drive-u. Google obrađuje prijavu, ovlašćenje i tehničke podatke potrebne za svoj servis prema svojim pravilima.</p>
+    <p>Magazin traži dozvolu <code>https://www.googleapis.com/auth/drive.file</code>. Ona ograničava pristup na datoteke kojima aplikacija ima pristup, uključujući one koje sama kreira; ne daje puni pristup svim tvojim Drive dokumentima. Integracija je koristi za kopije označene kao datoteke Magazina.</p>
+    <p>Kopiranje se pokušava posle izmena, pri pokretanju ili povratku aplikacije i pri povratku mreže dok aplikacija radi. Potpuno ugašena aplikacija ne šalje kopije u pozadini.</p>
+
+    <h2>Svrha, korišćenje i deljenje</h2>
+    <p>Podaci se koriste za prikaz i obračun evidencije, izvoz, kopiranje i vraćanje koje odobriš. Magazin ne prodaje tvoje podatke, ne koristi ih za oglase i nema ugrađenu analitiku korišćenja ili sopstveni servis koji prima evidenciju.</p>
+    <p>Korišćenje i prenos podataka dobijenih preko Google API-ja ograničeni su na navedene korisničke funkcije, u skladu sa <a href="https://developers.google.com/terms/api-services-user-data-policy" lang="en">Google API Services User Data Policy</a>, uključujući pravila <span lang="en">Limited Use</span>. Ti podaci se ne koriste za treniranje opštih AI modela niti za oglašavanje.</p>
+    <p>Ako samostalno podeliš izvezeni JSON, Drive datoteku ili pristup nalogu, primalac može pročitati podatke. Magazin ne postavlja javne dozvole za deljenje svojih Drive kopija.</p>
+
+    <h2>Čuvanje, brisanje i opoziv pristupa</h2>
+    <p>Lokalni podaci ostaju na uređaju do tvoje izmene ili brisanja. Aplikacija može čuvati zaštitne kopije prethodnog stanja radi oporavka, pa brisanje unosa ne znači i njegovo uklanjanje iz ranijih kopija.</p>
+    <p>Brisanje privatnih podataka aplikacije ili deinstalacija uklanjaju njeno lokalno skladište, ali ne i nezavisno izvezene, folder ili Drive kopije. To su destruktivne radnje, ne način nadogradnje aplikacije.</p>
+    <p>Drive kopije su odvojene datoteke i Magazin ih ne briše automatski. Odjava zaustavlja buduće slanje, ali ne briše stare kopije. Njima upravljaš na svom Drive-u. Google može zadržati obrisane datoteke u korpi i primenjivati svoja pravila čuvanja.</p>
+    <p>Pristup možeš opozvati u <a href="https://myaccount.google.com/connections">podešavanjima Google naloga</a>. Opoziv zaustavlja ovlašćeni pristup, ali ne briše lokalnu evidenciju ili ranije kopije. Ako dozvola prestane da važi, potrebno je ponovno povezivanje za nastavak Drive rada.</p>
+
+    <h2>Zaštita podataka i Android kopije</h2>
+    <p>Veze prema Google API-jima koriste HTTPS. JSON kopije nisu dodatno šifrovane aplikacijom. Zaštiti uređaj, izabrane fascikle, Google nalog i datoteke koje izvoziš.</p>
+    <p>Android i servisi proizvođača uređaja mogu praviti sistemske kopije prema tvojim podešavanjima i pravilima platforme. To je odvojeno od Drive bekupa u Magazinu i nije garancija oporavka.</p>
+    <p class="notice">Čuvaj nezavisnu JSON kopiju na bezbednom mestu. Kopija unutar aplikacije ne preživljava deinstalaciju.</p>
+
+    <h2>Informativni veb-sajt</h2>
+    <p>Ovaj sajt nema prijavu, formulare, analitičke skripte, oglase ili prijem JSON-a. Ne učitava udaljene fontove i ne koristi sopstvene skripte ili kolačiće.</p>
+    <p>Za javni sajt koristi se GitHub Pages. GitHub beleži i čuva IP adrese posetilaca radi bezbednosti, uključujući posete bez prijave. Obrada podataka pri korišćenju hostinga opisana je u <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub politici privatnosti</a>. Otvaranjem spoljnog linka prelaziš na drugi servis, sa njegovim pravilima.</p>
+
+    <h2>Izmene i javni kontakt</h2>
+    <p>Politika se ažurira kada se promeni opisano ponašanje aplikacije; datum poslednjeg ažuriranja naveden je na vrhu.</p>
+    <p>Informacije o održavaocu dostupne su preko <a href="https://github.com/magazinus">GitHub profila magazinus</a>. U javnim porukama ne šalji lozinke, Google tokene, signing ključeve ili privatnu finansijsku evidenciju.</p>
+    <p>Za Google servise važi i <a href="https://policies.google.com/privacy">Google politika privatnosti</a>.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Magazin je lična Android aplikacija. Ovaj sajt ne prima korisničku evidenciju.</p>
+      <p><a href="index.html">O aplikaciji</a> · <a href="terms.html">Uslovi korišćenja</a></p>
+    </div>
+  </footer>
+</body>
+</html>

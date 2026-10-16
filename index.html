@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Magazin je lična Android aplikacija za evidenciju honorarnih sati, uplata i salda, sa opcionim Google Drive kopijama.">
+  <title>Magazin — o aplikaciji</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip-link" href="#sadrzaj">Pređi na sadržaj</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Magazin</a>
+      <nav aria-label="Glavna navigacija">
+        <a href="index.html" aria-current="page">O aplikaciji</a>
+        <a href="privacy.html">Privatnost</a>
+        <a href="terms.html">Uslovi</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="sadrzaj" tabindex="-1">
+    <h1>Evidencija sati, uplata i salda.</h1>
+    <p class="lead">Magazin je lična Android aplikacija za praćenje honorarnog rada i uplata. Osnovni rad je lokalni, bez naloga i bez interneta.</p>
+
+    <h2>Lična evidencija na uređaju</h2>
+    <p>Unosiš datume, sate, uplate i opcione beleške. Svaki radni unos čuva svoju satnicu, pa promena podrazumevane satnice ne menja prošlu zaradu. Saldo obuhvata zaradu, uplate i početni dug.</p>
+    <p>Evidenciju i obračunska podešavanja možeš da izvezeš kao JSON i kasnije vratiš. Dostupne su i lokalne kopije i opcione kopije u izabranoj Android fascikli.</p>
+
+    <h2>Google Drive kopije, samo ako ih uključiš</h2>
+    <p>Google nalog potreban je samo za opcioni Drive bekup, u verziji aplikacije sa podešenom Google prijavom. Magazin koristi ograničenu dozvolu <code>drive.file</code> za svoje kopije, ne puni pristup svim dokumentima na tvom Drive-u.</p>
+    <p>Sama prijava ne šalje evidenciju. Tek kada izričito uključiš kopije, kompletan JSON evidencije i obračunskih podešavanja šalje se u fasciklu <strong>Magazin — kopije</strong> na izabranom Google nalogu. Uspeh se potvrđuje posle ponovnog čitanja i provere sadržaja.</p>
+    <p>Kopiranje se pokušava posle sačuvanih izmena, pri pokretanju ili povratku aplikacije i povratku mreže dok aplikacija radi. Potpuno ugašena aplikacija ne šalje kopije u pozadini. Ovo je bekup, ne automatska dvosmerna sinhronizacija.</p>
+    <p class="notice">Čuvaj i nezavisan JSON na bezbednom mestu. Kopije nisu dodatno šifrovane aplikacijom, a lokalna kopija unutar aplikacije ne preživljava deinstalaciju.</p>
+
+    <h2>Privatnost bez oglasa</h2>
+    <p>Magazin nema sopstveni server koji prima tvoju evidenciju. Nema oglase ni ugrađenu analitiku korišćenja. Drive kopije ne objavljuje javno. Obrada, čuvanje i brisanje podataka opisani su u <a href="privacy.html">politici privatnosti</a>, a namena i ograničenja u <a href="terms.html">uslovima korišćenja</a>.</p>
+    <p>Ovaj sajt samo objašnjava aplikaciju. Nema prijavu, formulare ni mogućnost slanja JSON kopija.</p>
+
+    <h2>Održavalac</h2>
+    <p>Javni profil projekta i održavaoca je <a href="https://github.com/magazinus">magazinus na GitHub-u</a>. Ne postavljaj privatnu evidenciju, lozinke ili Google tokene na javni profil ili u javne poruke.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Magazin je lična Android aplikacija. Ovaj sajt ne prima korisničku evidenciju.</p>
+      <p><a href="privacy.html">Politika privatnosti</a> · <a href="terms.html">Uslovi korišćenja</a></p>
+    </div>
+  </footer>
+</body>
+</html>
